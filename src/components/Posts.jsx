@@ -63,7 +63,7 @@ const Posts = ({ post }) => {
         to={`/posts/${post._id}`}
         className='viewBtn'
       >
-        View
+        Manage
       </Link>
       <h3>Posted By {post.name}</h3>
       <p>Description :- {post.description}</p>
