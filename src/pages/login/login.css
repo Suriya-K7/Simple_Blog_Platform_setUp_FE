@@ -1,0 +1,15 @@
+.login {
+  min-height: 100vh;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+.detailCards {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.432);
+  box-shadow: 0 8px 32px #1f26875e;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
