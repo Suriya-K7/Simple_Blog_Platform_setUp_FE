@@ -6,14 +6,18 @@ import { ToastContainer, Zoom } from "react-toastify";
 const PostsLists = () => {
   const { posts, fetchAllPost } = useContext(DataContext);
 
+  const formatedPost = posts
+    .slice()
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+
   useEffect(() => {
     fetchAllPost();
   }, []);
 
   return (
     <div>
-      {posts &&
-        posts.map((post) => (
+      {formatedPost &&
+        formatedPost.map((post) => (
           <Posts
             post={post}
             key={post._id}
